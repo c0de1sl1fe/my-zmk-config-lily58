@@ -63,11 +63,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC    &kp N1  &kp N2          &kp N3            &kp N4       &kp N5                              &kp N6     &kp N7       &kp N8                  &kp N9          &kp N0    &kp MINUS
-&kp TAB    &kp Q   &kp W           &kp E             &kp R        &kp T                               &kp Y      &kp U        &kp I                   &kp O           &kp P     &kp EQUAL
-&kp LCTRL  &kp A   &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G                               &kp H      &mt LCTRL J  &mt LSHIFT K            &mt LEFT_ALT L  &kp SEMI  &mt LCTRL SQT
-&kp LSHFT  &kp Z   &kp X           &kp C             &kp V        &kp B   &kp LBKT     &kp RBKT       &kp N      &kp M        &kp COMMA               &kp DOT         &kp FSLH  &kp RSHFT
-                                   &kp LALT          &kp LGUI     &mo 2   &kp ENTER    &kp BACKSPACE  &kp SPACE  &mo 1        &mt LEFT_ALT BACKSLASH
+&kp ESC    &kp N1  &kp N2           &kp N3             &kp N4        &kp N5                              &kp N6     &kp N7        &kp N8                   &kp N9           &kp N0    &kp MINUS
+&kp TAB    &kp Q   &kp W            &kp E              &kp R         &kp T                               &kp Y      &kp U         &kp I                    &kp O            &kp P     &kp EQUAL
+&kp LCTRL  &kp A   &hrm LEFT_ALT S  &hrm LEFT_SHIFT D  &hrm LCTRL F  &kp G                               &kp H      &hrm LCTRL J  &hrm LSHIFT K            &hrm LEFT_ALT L  &kp SEMI  &hrm LCTRL SQT
+&kp LSHFT  &kp Z   &kp X            &kp C              &kp V         &kp B   &kp LBKT     &kp RBKT       &kp N      &kp M         &kp COMMA                &kp DOT          &kp FSLH  &kp RSHFT
+                                    &kp LALT           &kp LGUI      &mo 2   &kp ENTER    &kp BACKSPACE  &kp SPACE  &mo 1         &hrm LEFT_ALT BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -75,21 +75,21 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE  &kp F1           &kp F2           &kp F3             &kp F4        &kp F5                                &kp F6     &kp F7         &kp F8         &kp F9                &kp F10                &kp F11
-&kp TAB    &kp EXCLAMATION  &kp AT_SIGN      &kp HASH           &kp DOLLAR    &kp PERCENT                           &kp CARET  &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
-&kp LCTRL  &kp N1           &mt LEFT_ALT N2  &mt LEFT_SHIFT N3  &mt LCTRL N4  &kp N5                                &kp N6     &mt LCTRL N7   &mt LSHIFT N8  &mt LEFT_ALT N9       &kp N0                 &kp LALT
-&kp LSHFT  &mkp LCLK        &mkp MB2         &trans             &kp INSERT    &kp INSERT   &kp LBKT     &kp RBKT    &kp MINUS  &kp EQUAL      &kp COMMA      &kp DOT               &kp FSLH               &kp RSHFT
-                                             &kp LALT           &kp LGUI      &mo 3        &kp ENTER    &kp DELETE  &kp SPACE  &trans         &kp BSLH
+&kp GRAVE  &kp F1           &kp F2                  &kp F3              &kp F4         &kp F5                                &kp F6     &kp F7         &kp F8          &kp F9                &kp F10                &kp F11
+&kp TAB    &kp EXCLAMATION  &kp AT_SIGN             &kp HASH            &kp DOLLAR     &kp PERCENT                           &kp CARET  &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
+&kp LCTRL  &kp N1           &hrm NUMBER_2 LEFT_ALT  &hrm LEFT_SHIFT N3  &hrm LCTRL N4  &kp N5                                &kp N6     &hrm LCTRL N7  &hrm LSHIFT N8  &hrm LEFT_ALT N9      &kp N0                 &kp LALT
+&kp LSHFT  &mkp LCLK        &mkp MB2                &trans              &kp INSERT     &kp INSERT   &kp LBKT     &kp RBKT    &kp MINUS  &kp EQUAL      &kp COMMA       &kp DOT               &kp FSLH               &kp RSHFT
+                                                    &kp LALT            &kp LGUI       &mo 3        &kp ENTER    &kp DELETE  &kp SPACE  &trans         &kp BSLH
             >;
         };
 
         layer_2 {
             bindings = <
-&kp GRAVE  &kp F1           &kp F2         &kp F3              &kp F4                      &kp F5                                          &kp F6     &kp F7          &kp F8        &kp F9       &kp F10        &kp F11
-&kp TAB    &kp EXCLAMATION  &kp AT_SIGN    &kp HASH            &kp DOLLAR                  &kp PERCENT                                     &trans     &kp HOME        &kp UP_ARROW  &kp END      &kp PG_UP      &kp F12
-&kp LCTRL  &kp CARET        &kp AMPERSAND  &mt LSHFT ASTERISK  &mt LCTRL LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                           &trans     &kp LEFT_ARROW  &kp DOWN      &kp RIGHT    &kp PAGE_DOWN  &kp LALT
-&kp LSHFT  &mkp LCLK        &mkp MB2       &trans              &kp INSERT                  &kp INSERT             &kp LBKT     &kp RBKT    &trans     &trans          &trans        &bootloader  &trans         &kp RSHFT
-                                           &kp LALT            &kp LGUI                    &trans                 &kp ENTER    &kp DELETE  &kp SPACE  &mo 3           &kp BSLH
+&kp GRAVE  &kp F1           &kp F2         &kp F3               &kp F4                       &kp F5                                          &kp F6     &kp F7          &kp F8        &kp F9       &kp F10        &kp F11
+&kp TAB    &kp EXCLAMATION  &kp AT_SIGN    &kp HASH             &kp DOLLAR                   &kp PERCENT                                     &trans     &kp HOME        &kp UP_ARROW  &kp END      &kp PG_UP      &kp F12
+&kp LCTRL  &kp CARET        &kp AMPERSAND  &hrm LSHFT ASTERISK  &hrm LCTRL LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                           &trans     &kp LEFT_ARROW  &kp DOWN      &kp RIGHT    &kp PAGE_DOWN  &kp LALT
+&kp LSHFT  &mkp LCLK        &mkp MB2       &trans               &kp INSERT                   &kp INSERT             &kp LBKT     &kp RBKT    &trans     &trans          &trans        &bootloader  &trans         &kp RSHFT
+                                           &kp LALT             &kp LGUI                     &trans                 &kp ENTER    &kp DELETE  &kp SPACE  &mo 3           &kp BSLH
             >;
         };
 
