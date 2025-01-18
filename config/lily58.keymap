@@ -42,12 +42,18 @@
         hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
             require-prior-idle-ms = <150>;
+        };
+
+        mouse: mouse {
+            compatible = "zmk,behavior-mouse-key-press";
+            label = "MOUSE";
+            #binding-cells = <1>;
         };
     };
 
@@ -75,21 +81,21 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE  &kp F1           &kp F2                  &kp F3              &kp F4         &kp F5                                &kp F6     &kp F7         &kp F8          &kp F9                &kp F10                &kp F11
-&kp TAB    &kp EXCLAMATION  &kp AT_SIGN             &kp HASH            &kp DOLLAR     &kp PERCENT                           &kp CARET  &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
-&kp LCTRL  &kp N1           &hrm NUMBER_2 LEFT_ALT  &hrm LEFT_SHIFT N3  &hrm LCTRL N4  &kp N5                                &kp N6     &hrm LCTRL N7  &hrm LSHIFT N8  &hrm LEFT_ALT N9      &kp N0                 &kp LALT
-&kp LSHFT  &mkp LCLK        &mkp MB2                &trans              &kp INSERT     &kp INSERT   &kp LBKT     &kp RBKT    &kp MINUS  &kp EQUAL      &kp COMMA       &kp DOT               &kp FSLH               &kp RSHFT
-                                                    &kp LALT            &kp LGUI       &mo 3        &kp ENTER    &kp DELETE  &kp SPACE  &trans         &kp BSLH
+&kp GRAVE  &kp F1           &kp F2        &kp F3    &kp F4      &kp F5                                &kp F6     &kp F7         &kp F8        &kp F9                &kp F10                &kp F11
+&kp TAB    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH  &kp DOLLAR  &kp PERCENT                           &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
+&kp LCTRL  &kp N1           &kp NUMBER_2  &kp N3    &kp N4      &kp N5                                &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp LALT
+&kp LSHFT  &mouse LCLK      &mouse MB2    &trans    &kp INSERT  &kp INSERT   &kp LBKT     &kp RBKT    &kp MINUS  &kp EQUAL      &kp COMMA     &kp DOT               &kp FSLH               &kp RSHFT
+                                          &kp LALT  &kp LGUI    &mo 3        &kp ENTER    &kp DELETE  &kp SPACE  &trans         &kp BSLH
             >;
         };
 
         layer_2 {
             bindings = <
-&kp GRAVE  &kp F1           &kp F2         &kp F3               &kp F4                       &kp F5                                          &kp F6     &kp F7          &kp F8        &kp F9       &kp F10        &kp F11
-&kp TAB    &kp EXCLAMATION  &kp AT_SIGN    &kp HASH             &kp DOLLAR                   &kp PERCENT                                     &trans     &kp HOME        &kp UP_ARROW  &kp END      &kp PG_UP      &kp F12
-&kp LCTRL  &kp CARET        &kp AMPERSAND  &hrm LSHFT ASTERISK  &hrm LCTRL LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                           &trans     &kp LEFT_ARROW  &kp DOWN      &kp RIGHT    &kp PAGE_DOWN  &kp LALT
-&kp LSHFT  &mkp LCLK        &mkp MB2       &trans               &kp INSERT                   &kp INSERT             &kp LBKT     &kp RBKT    &trans     &trans          &trans        &bootloader  &trans         &kp RSHFT
-                                           &kp LALT             &kp LGUI                     &trans                 &kp ENTER    &kp DELETE  &kp SPACE  &mo 3           &kp BSLH
+&kp GRAVE  &kp F1           &kp F2         &kp F3        &kp F4                &kp F5                                          &kp F6     &kp F7          &kp F8        &kp F9       &kp F10        &kp F11
+&kp TAB    &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR            &kp PERCENT                                     &trans     &kp HOME        &kp UP_ARROW  &kp END      &kp PG_UP      &kp F12
+&kp LCTRL  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                           &trans     &kp LEFT_ARROW  &kp DOWN      &kp RIGHT    &kp PAGE_DOWN  &kp LALT
+&kp LSHFT  &mkp LCLK        &mkp MB2       &trans        &kp INSERT            &kp INSERT             &kp LBKT     &kp RBKT    &trans     &trans          &trans        &bootloader  &trans         &kp RSHFT
+                                           &kp LALT      &kp LGUI              &trans                 &kp ENTER    &kp DELETE  &kp SPACE  &mo 3           &kp BSLH
             >;
         };
 
