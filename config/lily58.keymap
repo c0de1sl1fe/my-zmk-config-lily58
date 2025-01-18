@@ -44,8 +44,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
+            quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
         };
     };
@@ -84,11 +83,11 @@
 
         layer_2 {
             bindings = <
-&kp GRAVE  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                &kp F6     &kp F7          &kp F8        &kp F9       &kp F10        &kp F11
-&kp TAB    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp PERCENT                           &trans     &kp HOME        &kp UP_ARROW  &kp END      &kp PG_UP      &kp F12
-&kp LCTRL  &bt BT_PRV    &bt BT_NXT    &kp LSHFT     &kp LCTRL     &trans                                &trans     &kp LEFT_ARROW  &kp DOWN      &kp RIGHT    &kp PAGE_DOWN  &kp LALT
-&kp LSHFT  &mkp LCLK     &mkp MB2      &trans        &kp INSERT    &kp INSERT   &kp LBKT     &kp RBKT    &trans     &trans          &trans        &bootloader  &trans         &kp RSHFT
-                                       &kp LALT      &kp LGUI      &trans       &kp ENTER    &kp DELETE  &kp SPACE  &mo 3           &kp BSLH
+&kp GRAVE  &kp F1           &kp F2         &kp F3              &kp F4                      &kp F5                                          &kp F6     &kp F7          &kp F8        &kp F9       &kp F10        &kp F11
+&kp TAB    &kp EXCLAMATION  &kp AT_SIGN    &kp HASH            &kp DOLLAR                  &kp PERCENT                                     &trans     &kp HOME        &kp UP_ARROW  &kp END      &kp PG_UP      &kp F12
+&kp LCTRL  &kp CARET        &kp AMPERSAND  &mt LSHFT ASTERISK  &mt LCTRL LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                           &trans     &kp LEFT_ARROW  &kp DOWN      &kp RIGHT    &kp PAGE_DOWN  &kp LALT
+&kp LSHFT  &mkp LCLK        &mkp MB2       &trans              &kp INSERT                  &kp INSERT             &kp LBKT     &kp RBKT    &trans     &trans          &trans        &bootloader  &trans         &kp RSHFT
+                                           &kp LALT            &kp LGUI                    &trans                 &kp ENTER    &kp DELETE  &kp SPACE  &mo 3           &kp BSLH
             >;
         };
 
