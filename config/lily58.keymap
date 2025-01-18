@@ -42,12 +42,12 @@
         hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <235>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <210>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <125>;
         };
     };
 
