@@ -94,11 +94,11 @@
 
         math {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans            &trans             &trans                &trans                 &trans                            &trans     &trans     &trans     &trans     &trans    &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK                      &trans     &trans     &trans     &trans     &trans    &trans
+&trans  &kp N1            &kp N2             &kp N3                &kp N4                 &kp N5                            &trans     &kp LGUI   &kp LSHFT  &kp LCTRL  &kp LALT  &trans
+&trans  &kp N6            &kp N7             &kp N8                &kp N9                 &kp N0        &trans     &trans   &kp MINUS  &kp EQUAL  &trans     &trans     &trans    &trans
+                                             &trans                &kp ESC                &kp TAB       &kp RET    &kp DEL  &kp SPACE  &trans     &trans
             >;
         };
 
