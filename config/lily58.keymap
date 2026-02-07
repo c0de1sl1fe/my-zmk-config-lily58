@@ -84,11 +84,11 @@
 
         arrow {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans    &trans     &trans                &trans                 &trans                        &trans     &trans     &trans      &trans     &trans  &trans
+&trans  &kp LBKT  &kp RBKT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                        &trans     &kp HOME   &kp UP      &kp END    &trans  &trans
+&trans  &kp LALT  &kp LCTRL  &kp LSHFT             &kp LGUI               &trans                        &trans     &kp LEFT   &kp DOWN    &kp RIGHT  &trans  &trans
+&trans  &trans    &trans     &kp DEL               &kp BSPC               &trans   &trans     &trans    &kp MINUS  &kp EQUAL  &kp INSERT  &trans     &trans  &trans
+                             &trans                &kp ESC                &kp TAB  &kp RET    &kp BSPC  &kp SPACE  &trans     &trans
             >;
         };
 
